@@ -1,0 +1,30 @@
+.main {
+    width: 500px;
+    height: 388px;
+    background-color: darkorchid;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.imgStyle {
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.positiveInp {
+    border-color: lightgreen;
+    background-color: palegreen;
+    color: darkcyan;
+}
+
+.negativeInp {
+    border-color: red;
+    background-color: pink;
+    color: brown;
+}
+
+.inputStyle {
+    width: 30px;
+    font-size: 27px;
+}
