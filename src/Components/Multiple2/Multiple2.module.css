@@ -1,10 +1,10 @@
 .main {
     width: 500px;
-    height: 388px;
+    min-height: 388px;
     background-color: darkorchid;
     border: 1px solid #ffffff;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .imgStyle {
