@@ -1,61 +1,26 @@
 import React, {ChangeEvent, useState} from 'react'
 import styles from './Multiple2.module.css'
 import {CheckingImage} from "../CheckingImage/CheckingImage";
+import {useDispatch, useSelector} from "react-redux";
+import {RootStateType} from "../../Redux/store";
+import {InitialStateTasksType, setAnswerAC} from "../../Redux/multiple2-Reducer";
 
 
 export const Multiple2 = () => {
-    let multiplier = 2
-    let tasksArr: Array<number> = []
-    let w: Array<string> = []
-    //--------------------------------------------------------------------------------
-    let [multipleResult, setMultipleResult] = useState<boolean | null>(null)
 
-    let [answersArr, setAnswersArr] = useState<Array<string>>([])
-//------------------------------------------------------------------------------------
-    for (let i: number = 1; i < 11; i++) {
-        tasksArr.push(i)
-    }
-    w[0] = '0'
-//------------------------------------------------------------------------------------
-    const getInpValue = (value: string) => {
-        if (value !== '1') {
-            w.push(value)
-        }
-        if (w.length == 7) {
-            setAnswersArr(w)
-        }
-        /*if(
-            // w[0] === '' &&
-            // w[1] === '4' &&
-            // w[2] === '6' &&
-            // w[3] === '8' &&
-            // w[4] === '10' &&
-            // w[5] === '12' &&
-            // w[6] === '14' &&
-            // w[7] === '16' &&
-            // w[8] === '18' &&
-            // w[9] === '20'
-            //  w[0] === '4'
-        ) {
-            alert('you did it!')
-        }*/
-    }
+    const tasks2 = useSelector<RootStateType, InitialStateTasksType>(state => state.tasks2)
+    console.log(tasks2)
+    const dispatch = useDispatch();
 
+    const setAnswer = (taskAnswer: string, taskId: number) => {
+        const action = setAnswerAC(taskAnswer, taskId)
+        dispatch(action)
+    }
     return (
         <div className={styles.main}>
-            {tasksArr.map((el, index) => <div key={index}>{multiplier} * {el} = <input onChange={
-                (e: ChangeEvent<HTMLInputElement>) => {
-                    if (e.currentTarget.value === `${multiplier * el}` || e.currentTarget.value === '1') {
-                        setMultipleResult(multipleResult = true)
-                    } else {
-                        setMultipleResult(multipleResult = false)
-                    }
-                    getInpValue(e.currentTarget.value)
-                }} className={multipleResult ? `${styles.inputStyle} ${styles.positiveInp}` : `${styles.inputStyle} ${styles.negativeInp}`}
-            />
-            </div>)}
-            {/*----------------------------------------------------------------------------------------------------------------------*/}
-            <CheckingImage multipleResult={multipleResult}/>
+            {tasks2.map((el, index) => {
+                <div key={index}> <input value={el.rightAnswer} onChange={(e) => {setAnswer(e.currentTarget.value, el.id)}}/></div>})
+            }
         </div>
     )
 }
