@@ -1,5 +1,27 @@
+body{
+  background-image: url(assets/images/b516e927dfb72d5d4dc3b97ab9f3a223.jpg);
+}
+
 .App {
   text-align: center;
-  background-image: url(assets/images/186622111.jpg);
   background-repeat: repeat;
+  position: relative;
+
+}
+
+.nav_wrep {
+  position: absolute;
+  top: 100px;
+  background-color: cornflowerblue;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding-top: 50px;
+  box-shadow: 1px 1px 17px 9px white;
+}
+
+.App_title {
+  color: white;
+  font-size: 60px;
+  font-family: 'Brush Script MT', cursive;
+  margin: 5px;
 }

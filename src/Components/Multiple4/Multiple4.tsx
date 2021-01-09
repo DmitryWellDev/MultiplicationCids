@@ -1,11 +1,11 @@
 import React, {ChangeEvent, useEffect, useState} from 'react'
-import styles from './Multiple2.module.css'
+import styles from './Multiple4.module.css'
 import {CheckingImage} from "../CheckingImage/CheckingImage";
 
 
 
-export const Multiple2 = () => {
-    let multiplier = 2
+export const Multiple4 = () => {
+    let multiplier = 4
 
     let [arrayOfTasks, setArrayOfTasks] = useState<Array<{mult: number, isWrong: boolean | null}>>([])
 

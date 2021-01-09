@@ -1,0 +1,24 @@
+.entryTitle {
+    color: white;
+    padding-top: 50px;
+}
+
+.entryTitle_wrap {
+    margin: 100px auto 30px auto;
+    width: 1200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    opacity: 0.8;
+    border-radius: 40px;
+    box-shadow: 1px 1px 17px 9px white;
+}
+
+.entryButton {
+    width: 200px;
+    height: 100px;
+    background-color: darkslateblue;
+    border-radius: 20px;
+    opacity: 0.8;
+    color: white;
+    font-size: 25px;
+}
