@@ -1,0 +1,22 @@
+.number_wrap {
+    margin: 100px auto 30px auto;
+    width: 250px;
+    height: 250px;
+    background-color: cornflowerblue;
+    opacity: 0.8;
+    border-radius: 30px;
+    box-shadow: 1px 1px 17px 9px white;
+    position: relative;
+}
+
+.number {
+    color: white;
+    font-size: 150px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13px;
+    bottom: 0;
+    margin: auto;
+}
