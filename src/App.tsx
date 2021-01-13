@@ -7,6 +7,7 @@ import {Navbar} from "./Components/Navbar/Navbar";
 import {Route} from 'react-router-dom';
 import {Entry} from "./Components/Entry/Entry";
 import {ReverseCount} from "./Components/ReverseCount/ReverseCount";
+import {MovingArrow} from "./Components/MovingArrow/MovingArrow";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <div className="App">
             {showEntry && <Entry startHandler={startHandler}/>}
             {showReverseCount && <ReverseCount hideReverseCount={hideReverseCount}/>}
+            {/*<MovingArrow/>*/}
             {showTable && <><p className='App_title'>Lets check your mathematic skill</p>
                 <div className='nav_wrep'>
                 <Navbar/>
