@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MultiplicationCids/static/css/main.e072ddb9.chunk.css",
+    "main.js": "/MultiplicationCids/static/js/main.255c2d09.chunk.js",
+    "main.js.map": "/MultiplicationCids/static/js/main.255c2d09.chunk.js.map",
+    "runtime-main.js": "/MultiplicationCids/static/js/runtime-main.90b8dbb8.js",
+    "runtime-main.js.map": "/MultiplicationCids/static/js/runtime-main.90b8dbb8.js.map",
+    "static/js/2.44dea2d5.chunk.js": "/MultiplicationCids/static/js/2.44dea2d5.chunk.js",
+    "static/js/2.44dea2d5.chunk.js.map": "/MultiplicationCids/static/js/2.44dea2d5.chunk.js.map",
+    "static/js/3.4c46b7ef.chunk.js": "/MultiplicationCids/static/js/3.4c46b7ef.chunk.js",
+    "static/js/3.4c46b7ef.chunk.js.map": "/MultiplicationCids/static/js/3.4c46b7ef.chunk.js.map",
+    "index.html": "/MultiplicationCids/index.html",
+    "static/css/main.e072ddb9.chunk.css.map": "/MultiplicationCids/static/css/main.e072ddb9.chunk.css.map",
+    "static/js/2.44dea2d5.chunk.js.LICENSE.txt": "/MultiplicationCids/static/js/2.44dea2d5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90b8dbb8.js",
+    "static/js/2.44dea2d5.chunk.js",
+    "static/css/main.e072ddb9.chunk.css",
+    "static/js/main.255c2d09.chunk.js"
+  ]
+}
